@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&family=Manrope%3Awght%40400%3B500%3B700%3B800&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&family=Manrope%3Awght%40400%3B500%3B700%3B800&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
     <title>Victor Koome</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -21,7 +18,7 @@
             --text-secondary: #3F5374;
             --accent: #F4C753;
             --border: #D4DBE8;
-            --shadow: rgba(0,0,0,0.1);
+            --shadow: rgba(0, 0, 0, 0.1);
         }
 
         [data-theme="dark"] {
@@ -31,7 +28,7 @@
             --text-secondary: #b0b0b0;
             --accent: #F4C753;
             --border: #404040;
-            --shadow: rgba(0,0,0,0.1);
+            --shadow: rgba(0, 0, 0, 0.1);
         }
 
         body {
@@ -67,7 +64,7 @@
             top: 2px;
             left: 2px;
             transition: transform 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .toggle-switch.active .toggle-slider {
@@ -96,7 +93,7 @@
             .project-card {
                 flex-direction: column;
             }
-            
+
             .project-image {
                 order: -1;
                 margin-bottom: 1rem;
@@ -104,12 +101,16 @@
         }
     </style>
 </head>
+
 <body class="theme-transition" style='font-family: Manrope, "Noto Sans", sans-serif;'>
     <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
         <!-- Theme Toggle -->
-        <div class="fixed top-4 right-4 z-50 flex items-center gap-3 bg-white/90 dark:bg-black/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
+        <div
+            class="fixed top-4 right-4 z-50 flex items-center gap-3 bg-white/90 dark:bg-black/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
             <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                <path fill-rule="evenodd"
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                    clip-rule="evenodd"></path>
             </svg>
             <div class="toggle-switch" id="themeToggle">
                 <div class="toggle-slider"></div>
@@ -126,22 +127,24 @@
                     <div class="flex p-4">
                         <div class="flex w-full flex-col gap-4 items-center">
                             <div class="flex gap-4 flex-col items-center text-center">
-                                <div
-                                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-24 w-24 sm:min-h-32 sm:w-32 border-4 border-opacity-20 hover-scale"
-                                    style='background-image: url(./assets/vic2Comp.webp); border-color: var(--accent);'
-                                ></div>
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-24 w-24 sm:min-h-32 sm:w-32 border-4 border-opacity-20 hover-scale"
+                                    style='background-image: url(./assets/vic2Comp.webp); border-color: var(--accent);'>
+                                </div>
                                 <div class="flex flex-col items-center justify-center">
-                                    <h1 class="text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em] text-center theme-transition" style="color: var(--text-primary)">Victor Koome</h1>
-                                    <p class="text-sm sm:text-base font-normal leading-normal text-center theme-transition" style="color: var(--text-secondary)">Software Developer, 3+ years experience</p>
-                                    <p class="text-sm sm:text-base font-normal leading-normal text-center theme-transition" style="color: var(--text-secondary)">Nairobi, Kenya</p>
+                                    <h1 class="text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em] text-center theme-transition"
+                                        style="color: var(--text-primary)">Victor Koome</h1>
+                                    <p class="text-sm sm:text-base font-normal leading-normal text-center theme-transition"
+                                        style="color: var(--text-secondary)">Software Developer, 3+ years experience</p>
+                                    <p class="text-sm sm:text-base font-normal leading-normal text-center theme-transition"
+                                        style="color: var(--text-secondary)">Nairobi, Kenya</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                         <div class="container max-w-screen-lg mx-auto">
+                    <div class="container max-w-screen-lg mx-auto">
                         <div>
                             <div class="flex flex-wrap justify-center gap-2">
-                    
+
                                 <a href="https://www.linkedin.com/in/victor-koome-31787a242/" target="_blank"
                                     class="bg-blue-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
                                     <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 256 256"
@@ -152,11 +155,12 @@
                                         </g>
                                     </svg>
                                 </a>
-                    
+
                                 <a href="https://github.com/VictorDevLab" target="_blank"
                                     class="bg-gray-900 dark:bg-gray-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                                        role="img" class="w-5" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img" class="w-5" preserveAspectRatio="xMidYMid meet"
+                                        viewBox="0 0 24 24">
                                         <g fill="none">
                                             <path fillRule="evenodd" clipRule="evenodd"
                                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
@@ -167,72 +171,89 @@
                             </div>
                         </div>
                     </div>
-                  
+
 
                     <!-- About Me Section -->
                     <section class="mb-8">
-                        <h2 class="text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 theme-transition" style="color: var(--text-primary)">About Me</h2>
-                        <p class="text-sm sm:text-base font-normal leading-normal pb-3 pt-1 px-4 theme-transition" style="color: var(--text-primary)">
-                           Experienced Web Developer with 3+ years of hands-on experience in developing comprehensive web applications and solutions. Proven track record of delivering hyper-customized solutions for clients across 80+ industries, serving SMBs, multinational corporations, and government entities. Skilled in modern JavaScript frameworks and ecosystem, database management, and cloud-based software development. Passionate about creating user-friendly applications that drive operational efficiency and data-driven decision-making. 
+                        <h2 class="text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 theme-transition"
+                            style="color: var(--text-primary)">About Me</h2>
+                        <p class="text-sm sm:text-base font-normal leading-normal pb-3 pt-1 px-4 theme-transition"
+                            style="color: var(--text-primary)">
+                            Experienced Web Developer with 3+ years of hands-on experience in developing comprehensive
+                            web applications and solutions. Proven track record of delivering hyper-customized solutions
+                            for clients across 80+ industries, serving SMBs, multinational corporations, and government
+                            entities. Skilled in modern JavaScript frameworks and ecosystem, database management, and
+                            cloud-based software development. Passionate about creating user-friendly applications that
+                            drive operational efficiency and data-driven decision-making.
                         </p>
                     </section>
-                   
+
                     <!-- Projects Section -->
                     <section class="mb-8">
-                        <h2 class="text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 theme-transition" style="color: var(--text-primary)">Projects</h2>
-                        
+                        <h2 class="text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 theme-transition"
+                            style="color: var(--text-primary)">Projects</h2>
+
                         <!-- Project 1 -->
-                       <a href="https://alphahrms.vercel.app/" target="_blank" rel="noopener noreferrer">
-                         <div class="p-4">
-                            <div class="flex flex-col lg:flex-row items-stretch justify-between gap-4 rounded-xl p-4 project-card theme-transition hover-scale">
-                                <div class="flex flex-col gap-2 flex-1 lg:flex-[2_2_0px]">
-                                    <p class="text-xs sm:text-sm font-normal leading-normal theme-transition" style="color: var(--text-secondary)">Technologies: Vue.Js, Pinia, Node.js, Express, MongoDB</p>
-                                    <p class="text-sm sm:text-base font-bold leading-tight theme-transition" style="color: var(--text-primary)">HRMS (Human Resource Management System)</p>
-                                    <p class="text-xs sm:text-sm font-normal leading-normal theme-transition" style="color: var(--text-secondary)">
-                                        A comprehensive solution for managing human resources, including employee profiles, attendance, leaves, trainings and development, assets and company configurations.
-                                    </p>
-                                    <div class="md:absolute bottom-1 sm:bottom-10 sm:left-4 flex gap-4">
+                        <a href="https://alphahrms.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <div class="p-4">
+                                <div
+                                    class="flex flex-col lg:flex-row items-stretch justify-between gap-4 rounded-xl p-4 project-card theme-transition hover-scale">
+                                    <div class="flex flex-col gap-2 flex-1 lg:flex-[2_2_0px]">
+                                        <p class="text-sm sm:text-base font-bold leading-tight theme-transition"
+                                            style="color: var(--text-primary)">HRMS (Human Resource Management System)
+                                        </p>
+                                        <p class="text-xs sm:text-sm font-normal underline leading-normal theme-transition"
+                                            style="color: var(--text-secondary)">Technologies: Vue.Js, Pinia, Node.js,
+                                            Express, MongoDB</p>
+                                        <p class="text-xs sm:text-sm font-normal leading-normal theme-transition"
+                                            style="color: var(--text-secondary)">
+                                            A comprehensive solution for managing human resources, including employee
+                                            profiles, attendance, leaves, trainings and development, assets and company
+                                            configurations.
+                                        </p>
+                                        <div class="md:absolute bottom-1 sm:bottom-10 sm:left-4 flex gap-4">
                                             <a href="https://github.com/VictorDevLab/hrms-admin" target="_blank"
                                                 class="text-xs underline text-blue-600 hover:text-blue-800">Code</a>
                                             <a href="https://alphahrms.vercel.app/" target="_blank"
                                                 class="text-xs underline text-blue-600 hover:text-blue-800">LiveSite</a>
                                         </div>
-                                </div>
-                                <div
-                                    class="w-full border-4 bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1 lg:max-w-xs project-image"
-                                >
-                                    <img src="./assets/reports.png" alt="HRMS Project Image" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div
+                                        class="w-full border-4 bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1 lg:max-w-xs project-image">
+                                        <img src="./assets/hralpha.png" alt="HRMS Project Image"
+                                            class="w-full h-full object-cover rounded-lg">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                       </a>
+                        </a>
                         <!-- Project 2 -->
                         <a href="https://alphaats.vercel.app/" target="_blank" rel="noopener noreferrer">
                             <div class="p-4">
                                 <div
                                     class="flex flex-col lg:flex-row items-stretch justify-between gap-4 rounded-xl p-4 project-card theme-transition hover-scale relative">
                                     <div class="flex flex-col gap-2 flex-1 lg:flex-[2_2_0px]">
-                                        <p class="text-xs sm:text-sm font-normal leading-normal theme-transition"
-                                            style="color: var(--text-secondary)">Technologies: React, Context API, TypeScript, Express, MongoDB
-                                        </p>
                                         <p class="text-sm sm:text-base font-bold leading-tight theme-transition"
-                                            style="color: var(--text-primary)">ATS (Applicants Tracking System)</p>
+                                            style="color: var(--text-primary)">The Wild Oasis</p>
+                                        <p class="text-xs sm:text-sm font-normal underline leading-normal theme-transition"
+                                            style="color: var(--text-secondary)">Technologies: Next Js, Context API, Supabase, Tailwind Css, NextAuth 
+                                        </p>
                                         <p class="text-xs sm:text-sm font-normal leading-normal theme-transition"
                                             style="color: var(--text-secondary)">
-                                            Simplify the recruitment process by tracking job applications, managing candidate profiles, and
-                                            scheduling interviews.
+                                            Developed a full-stack cabin booking platform with secure authentication,
+                                            real-time data from Supabase, dynamic routing, and responsive UI for
+                                            browsing, booking, and managing reservations.
                                         </p>
                                         <div class="md:absolute bottom-1 sm:bottom-10 sm:left-4 flex gap-4">
-                                            <a href="https://github.com/VictorDevLab/ats-client" target="_blank"
+                                            <a href="https://github.com/VictorDevLab/the-wild-oasis" target="_blank"
                                                 class="text-xs underline text-blue-600 hover:text-blue-800">Code</a>
-                                            <a href="https://alphaats.vercel.app/" target="_blank"
+                                            <a href="https://the-wild-oasis-bxh6.vercel.app/" target="_blank"
                                                 class="text-xs underline text-blue-600 hover:text-blue-800">LiveSite</a>
                                         </div>
                                     </div>
                                     <div
                                         class="w-full border-4 bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1 lg:max-w-xs project-image">
-                                        <img src="./assets/managercentral.png" alt="ATS Project Image"
+                                        <img src="./assets/wildoasis.png" alt="ATS Project Image"
                                             class="w-full h-full object-cover rounded-lg">
                                     </div>
                                 </div>
@@ -241,72 +262,107 @@
 
 
                         <!-- Project 3 -->
-                        <!-- <div class="p-4">
-                            <div class="flex flex-col lg:flex-row items-stretch justify-between gap-4 rounded-xl p-4 project-card theme-transition hover-scale">
-                                <div class="flex flex-col gap-2 flex-1 lg:flex-[2_2_0px]">
-                                    <p class="text-xs sm:text-sm font-normal leading-normal theme-transition" style="color: var(--text-secondary)">Technologies: React Native, Expo, Express, MongoDB</p>
-                                    <p class="text-sm sm:text-base font-bold leading-tight theme-transition" style="color: var(--text-primary)">Mini Banking App</p>
-                                    <p class="text-xs sm:text-sm font-normal leading-normal theme-transition" style="color: var(--text-secondary)">A user-friendly banking application for managing accounts, transactions, and online payments.</p>
-                                </div>
+                        <a href="https://alphaats.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <div class="p-4">
                                 <div
-                                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1 lg:max-w-xs project-image"
-                                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/3b180363-4430-4f73-8eeb-5ccbd29db9c7.png");'
-                                ></div>
+                                    class="flex flex-col lg:flex-row items-stretch justify-between gap-4 rounded-xl p-4 project-card theme-transition hover-scale relative">
+                                    <div class="flex flex-col gap-2 flex-1 lg:flex-[2_2_0px]">
+                                        <p class="text-sm sm:text-base font-bold leading-tight theme-transition"
+                                            style="color: var(--text-primary)">Google Flights clone</p>
+                                        <p class="text-xs sm:text-sm font-normal underline leading-normal theme-transition"
+                                            style="color: var(--text-secondary)">Technologies: React Js, Tailwind Css 
+                                        </p>
+                                        <p class="text-xs sm:text-sm font-normal leading-normal theme-transition"
+                                            style="color: var(--text-secondary)">
+                                            Built a flight search interface inspired by Google Flights, featuring
+                                            airport autocomplete, date picker, and real-time results integration to help
+                                            users search and compare airfare options.
+                                        </p>
+                                        <div class="md:absolute bottom-1 sm:bottom-10 sm:left-4 flex gap-4">
+                                            <a href="https://github.com/VictorDevLab/google-flights" target="_blank"
+                                                class="text-xs underline text-blue-600 hover:text-blue-800">Code</a>
+                                            <a href="https://google-flights-jade.vercel.app/" target="_blank"
+                                                class="text-xs underline text-blue-600 hover:text-blue-800">LiveSite</a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="w-full border-4 bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1 lg:max-w-xs project-image">
+                                        <img src="./assets/googleflights.png" alt="ATS Project Image"
+                                            class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                </div>
                             </div>
-                        </div> -->
+                        </a>
                     </section>
                     <!-- Work History Section -->
                     <section class="mb-8">
-                        <h2 class="text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 theme-transition" style="color: var(--text-primary)">Work History</h2>
+                        <h2 class="text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 theme-transition"
+                            style="color: var(--text-primary)">Work History</h2>
                         <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
                             <!-- Current Position -->
                             <div class="flex flex-col items-center gap-1 pt-3">
                                 <div class="theme-transition" style="color: var(--text-primary)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                                        <path d="M216,40H168a8,8,0,0,0,0,16h16V176.85L111,44.14A8,8,0,0,0,104,40H40a8,8,0,0,0,0,16H56V200H40a8,8,0,0,0,0,16H88a8,8,0,0,0,0-16H72V79.15l73,132.71a8,8,0,0,0,7,4.14h40a8,8,0,0,0,8-8V56h16a8,8,0,0,0,0-16ZM77.53,56H99.27l79.2,144H156.73Z"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                        fill="currentColor" viewBox="0 0 256 256">
+                                        <path
+                                            d="M216,40H168a8,8,0,0,0,0,16h16V176.85L111,44.14A8,8,0,0,0,104,40H40a8,8,0,0,0,0,16H56V200H40a8,8,0,0,0,0,16H88a8,8,0,0,0,0-16H72V79.15l73,132.71a8,8,0,0,0,7,4.14h40a8,8,0,0,0,8-8V56h16a8,8,0,0,0,0-16ZM77.53,56H99.27l79.2,144H156.73Z">
+                                        </path>
                                     </svg>
                                 </div>
                                 <div class="w-[1.5px] h-8 grow timeline-line theme-transition"></div>
                             </div>
                             <div class="flex flex-1 flex-col py-3">
-                                <p class="text-sm sm:text-base font-medium leading-normal theme-transition" style="color: var(--text-primary)">Fullstack Developer at Nathan Digital</p>
-                                <p class="text-xs sm:text-base font-normal leading-normal theme-transition" style="color: var(--text-secondary)">2024 April- Present</p>
-                                <p class="text-xs sm:text-base font-normal theme-transition" style="color: var(--text-secondary)">Developed
-                                    hyper-customized ERP solutions for clients across 80+ industries in the MENA region, serving SMBs, multinational
+                                <p class="text-sm sm:text-base font-medium leading-normal theme-transition"
+                                    style="color: var(--text-primary)">Fullstack Developer at Nathan Digital</p>
+                                <p class="text-xs sm:text-base font-normal leading-normal theme-transition"
+                                    style="color: var(--text-secondary)">2024 April- Present</p>
+                                <p class="text-xs sm:text-base font-normal theme-transition"
+                                    style="color: var(--text-secondary)">Developed
+                                    hyper-customized ERP solutions for clients across 80+ industries in the MENA region,
+                                    serving SMBs, multinational
                                     corporations, and government entities.
-                                
-                                    Contributed to the design and enhancement of a cloud-based software suite, including modules for HRMS, CRM,
+
+                                    Contributed to the design and enhancement of a cloud-based software suite, including
+                                    modules for HRMS, CRM,
                                     Accounting, Supply Chain Management, Logistics, and Business Intelligence.
-                                
-                                    Collaborated with cross-functional teams to deliver scalable, client-specific solutions that improved operational
+
+                                    Collaborated with cross-functional teams to deliver scalable, client-specific
+                                    solutions that improved operational
                                     efficiency and data-driven decision-making.
-                                
-                                    Worked closely with clients to understand unique business requirements and translated them into tailored system
+
+                                    Worked closely with clients to understand unique business requirements and
+                                    translated them into tailored system
                                     functionalities.</p>
                             </div>
 
                             <!-- Previous Position -->
                             <div class="flex flex-col items-center gap-1 pb-3">
                                 <div class="w-[1.5px] h-8 timeline-line theme-transition"></div>
-                                <div
-                                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6"
-                                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/c3d23b81-04b4-4d9e-a551-0d2cf9cac48d.png");'
-                                ></div>
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6"
+                                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/c3d23b81-04b4-4d9e-a551-0d2cf9cac48d.png");'>
+                                </div>
                             </div>
                             <div class="flex flex-1 flex-col py-3">
-                                <p class="text-sm sm:text-base font-medium leading-normal theme-transition" style="color: var(--text-primary)">Software Developer at Kalro</p>
-                                <p class="text-xs sm:text-base font-normal leading-normal theme-transition" style="color: var(--text-secondary)">Jan 2023 - Sep 2023</p>
-                                <p class="text-xs sm:text-base font-small theme-transition" style="color: var(--text-secondary)">
-                                    Streamlined data management and analysis processes to enhance the efficiency of a national agriculture initiative
+                                <p class="text-sm sm:text-base font-medium leading-normal theme-transition"
+                                    style="color: var(--text-primary)">Software Developer at Kalro</p>
+                                <p class="text-xs sm:text-base font-normal leading-normal theme-transition"
+                                    style="color: var(--text-secondary)">Jan 2023 - Sep 2023</p>
+                                <p class="text-xs sm:text-base font-small theme-transition"
+                                    style="color: var(--text-secondary)">
+                                    Streamlined data management and analysis processes to enhance the efficiency of a
+                                    national agriculture initiative
                                     impacting approximately 6.5 million Kenyan farmers.
-                                
-                                    Assisted in the research, development, and implementation of integration technologies to support seamless data
+
+                                    Assisted in the research, development, and implementation of integration
+                                    technologies to support seamless data
                                     collection, processing, and presentation.
-                                
-                                    Contributed to building web-based solutions that improved data accessibility, visualization, and decision-making for
+
+                                    Contributed to building web-based solutions that improved data accessibility,
+                                    visualization, and decision-making for
                                     stakeholders.
-                                
-                                    Collaborated with cross-functional teams to ensure system scalability, reliability, and user-friendliness.</p>
+
+                                    Collaborated with cross-functional teams to ensure system scalability, reliability,
+                                    and user-friendliness.</p>
                             </div>
                         </div>
                     </section>
@@ -319,26 +375,26 @@
         // Theme toggle functionality
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
-        
+
         // Check for saved theme preference or default to light
         const currentTheme = localStorage.getItem('theme') || 'light';
         body.setAttribute('data-theme', currentTheme);
-        
+
         if (currentTheme === 'dark') {
             themeToggle.classList.add('active');
         }
-        
-        themeToggle.addEventListener('click', function() {
+
+        themeToggle.addEventListener('click', function () {
             const currentTheme = body.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
+
             body.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            
+
             this.classList.toggle('active');
         });
 
-        // Add smooth scrolling for better UX
+        // smooth scrolling for better UX
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -376,4 +432,5 @@
         });
     </script>
 </body>
+
 </html>
